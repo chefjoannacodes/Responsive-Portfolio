@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   color: #777;
   line-height: 34px;
-  background-image:url(assets/images/cork-wallet.png); 
+  background-image:url(../images/cork-wallet.png); 
 }
 
 * {
@@ -81,9 +81,9 @@ h3 {
   
 }
 
-#bio-image {
-  width: 250px;
-  height: 370px;
+.bio-image {
+  width: 200px;
+  height: auto;
   float: left;
   margin-right: 22px;
   margin-bottom: 22px;
@@ -259,34 +259,73 @@ input[type=submit] {
 }
 
 /*This is desktop size*/
-@media screen (max-width:980px) {
-
+@media screen and (max-width:980px){
+  .container {
+    width:75%;
+  }
 }
 /*Desktop size end*/
 
 /*This is tablet size*/ 
-@media screen (max-width:768px) {
-  body {
+@media screen and (max-width:768px){
+  #logo {
     background-color: blue;
+    max-width: 100%;
   }
+  .bio-image {
+    max-width: 100%;
+  }
+  .container {
+    width:initial;
 }
+  #masthead {
+    max-width: 100%;
+  }
 /*Tablet size end*/
 
 /*Mobile size*/
-@media handheld, screen and (min-width: 0px) and (max-width:640px){
+@media screen and (max-width:640px){
   #masthead {
     position: static;
-    width:638px;
-    height:89px;
+    max-width: 100%;
   }
+
+.main-section{
+  padding-left: 19px;
+  padding-top: initial;
+}
   nav {
-    width: 639px;
-    height: 67px;
+    margin-top: 14px;
+    padding-bottom: 5px;
+    float: left; 
+  }
+
+  nav a {
+    margin-left: 75px;
+    margin-right: 5px;
+  }
+
+  #main-container {
+    padding-top: 2px;
+  }
+
+  #logo {
+    background-color: #4aaaa5;
+    width:100%;
+  }
+  .bio-image {
+    max-width: 100%;
+    height:auto;
+    margin-left: 110px;
+    float:none;
   }
   .container {
-    width:596px;
-    height: 809px;
+    margin: 0px;
   }
+  .sidebar {
+  padding: 30px;
+  max-width: 100%;
+  float: left;
 
 }
 /*Mobile size ends*/
