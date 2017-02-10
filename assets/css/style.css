@@ -92,6 +92,7 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-left: -29px;
 }
 
 nav a {
@@ -297,12 +298,21 @@ input[type=submit] {
   nav {
     margin-top: 14px;
     padding-bottom: 5px;
-    float: left; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
+nav a {
+  width:27%;
+}
+  
 
-  nav a {
-    margin-left: 75px;
-    margin-right: 5px;
+  nav a:first-child {
+  margin-left: none;
+}
+
+  nav a:third-child {
+    margin-right: none;
   }
 
   #main-container {
@@ -315,13 +325,15 @@ input[type=submit] {
   }
   .bio-image {
     max-width: 100%;
-    height:auto;
-    margin-left: 110px;
+    margin-left: auto;
+    margin-right: auto;
     float:none;
   }
   .container {
-    margin: 0px;
+    margin: 0 auto;
+    
   }
+
   .sidebar {
   padding: 30px;
   max-width: 100%;
