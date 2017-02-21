@@ -260,84 +260,80 @@ input[type=submit] {
 }
 
 /*This is desktop size*/
-@media screen and (max-width:980px){
-  .container {
-    width:75%;
+@media only screen and (max-width:980px) {
+.container {
+    padding: 0 20px;
+    max-width: 768px;
+  }
+  #main-container {
+    padding-top: 130px;
+  }
+  .main-section {
+    max-width: 420px;
+  }
+  .work {
+    width: 100%;
+  }
+  .auth-image {
+    width:100%;
+    margin-bottom: 20px;
   }
 }
 /*Desktop size end*/
 
 /*This is tablet size*/ 
-@media screen and (max-width:768px){
-  #logo {
-    background-color: blue;
+@media only screen (max-width:768px) {
+  .main-section, .sidebar {
     max-width: 100%;
+    color: blue;
   }
-  .bio-image {
-    max-width: 100%;
+  #main-container {
+    overflow: auto; /*this creates a scrollbar if needed*/
   }
-  .container {
-    width:initial;
+  .sidebar {
+    margin-bottom: 40px;
+  }
+  .work {
+    width: 47%;
+    margin-bottom: 10px;
+  }
+  /*This will create left and right columns to display work images */
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+  .work:nth-child(odd) {
+    float: right;
+  }
+  .auth-image {
+    width: 50%;
+  }
 }
-  #masthead {
-    max-width: 100%;
-  }
 /*Tablet size end*/
 
 /*Mobile size*/
-@media screen and (max-width:640px){
+ @media only screen and (max-width:640px){
   #masthead {
     position: static;
-    max-width: 100%;
+    margin-bottom: 20px;
   }
-
-.main-section{
-  padding-left: 19px;
-  padding-top: initial;
-}
-  nav {
-    margin-top: 14px;
-    padding-bottom: 5px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  header.container {
+    padding: 0;
   }
-nav a {
-  width:27%;
-}
-  
-
-  nav a:first-child {
-  margin-left: none;
-}
-
-  nav a:third-child {
-    margin-right: none;
-  }
-
   #main-container {
-    padding-top: 2px;
+    padding-top: 0;
   }
+  #logo, .work, .auth-image {
+    width: 100%;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+  nav a {
+    width: 30%;
+    padding-left: 0;
+  }
+ }
 
-  #logo {
-    background-color: #4aaaa5;
-    width:100%;
-  }
-  .bio-image {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    float:none;
-  }
-  .container {
-    margin: 0 auto;
-    
-  }
-
-  .sidebar {
-  padding: 30px;
-  max-width: 100%;
-  float: left;
-
-}
 /*Mobile size ends*/
