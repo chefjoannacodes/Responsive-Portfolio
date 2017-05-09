@@ -1,7 +1,7 @@
 # Responsive-Portfolio
 
 ## Github Link 
-- https://github.com/chefjoannacodes/Responsive-Portfolio.git
+-https://chefjoannacodes.github.io/Responsive-Portfolio/
 
 ## Description 
 Using last week's Basic-Portfolio, and media queries, I created a 3-page responsive portfolio with my picture, bio, projects, and contact page. 
